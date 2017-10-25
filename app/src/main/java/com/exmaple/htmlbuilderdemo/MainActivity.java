@@ -65,7 +65,8 @@ public class MainActivity extends AppCompatActivity {
                 .addOnClick("Click me", "alert('I am alert');")
                 .endDiv()
                 .newline()
-                .addImage("https://images-cdn.9gag.com/photo/azL60YN_460s.jpg", "suckerr")
+                .addImage("https://ih0.redbubble.net/image.128960625.4633/st%2Csmall%2C215x235" +
+                        "-pad%2C210x230%2Cf8f8f8.lite-1u2.jpg", "suckerr")
                 .newline()
                 .addHeading("I AM HEADER", "#AAD")
                 .newline()
