@@ -88,7 +88,7 @@ public class HtmlBuilder {
     }
 
     /**
-     * Adds the HTML non-breaking space "&nbsp;"
+     * Adds the HTML non-breaking space "&amp;nbsp;"
      */
     public HtmlBuilder addNbsp() {
         mStringBuilder.append("&nbsp;");
@@ -96,7 +96,7 @@ public class HtmlBuilder {
     }
 
     /**
-     * Adds multiple HTML non-breaking space "&nbsp;"
+     * Adds multiple HTML non-breaking space "&amp;nbsp;"
      *
      * @param count number of times to be added
      */
