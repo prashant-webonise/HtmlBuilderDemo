@@ -1,8 +1,41 @@
 apply plugin: 'java'
 
+def latestVersion = '1.0.0'
+
+ext {
+    bintrayRepo = 'HtmlBuilder'
+    bintrayName = 'HtmlBuilder'
+
+    publishedGroupId = 'com.prashant.java'
+    libraryName = 'HtmlBuilder'
+    artifact = 'htmlbuilder'
+
+    libraryDescription = ' '
+
+    siteUrl = 'https://github.com/singhprashant17/HtmlBuilderDemo'
+    gitUrl = 'https://github.com/singhprashant17/HtmlBuilderDemo.git'
+
+    libraryVersion = latestVersion
+
+    developerId = 'singhprashant17'
+    developerName = 'Prashant Singh'
+    developerEmail = 'singhprashantkumar@hotmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }
 
 sourceCompatibility = "1.7"
 targetCompatibility = "1.7"
+
+tasks.withType(Javadoc).all {
+    enabled = false
+}
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
