@@ -2,7 +2,7 @@
 
 An example implementation of a simple builder-pattern inspired html generator. 
 
-This<b>JAVA</b> library provides apis to do all you need to easily generate HTML text.
+This <b>JAVA</b> library provides apis to do all you need to easily generate HTML text.
 This is a Java library demonstrated in an  Android App
 
 <b>Usage</b>
