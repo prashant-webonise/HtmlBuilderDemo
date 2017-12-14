@@ -53,12 +53,18 @@ Output html on chrome
 
 <b>Integration</b>
 
-Add it on your gradle build:
-
+- As a gradle dependency
 ```groovy
-dependencies {
-        compile 'com.prashant.java:htmlbuilder:1.0.0'
-}
+compile 'com.prashant.java:htmlbuilder:1.0.0'
+```
+- As a maven dependency
+```xml
+<dependency>
+    <groupId>com.prashant.java</groupId>
+    <artifactId>htmlbuilder</artifactId>
+    <version>1.0.0</version>
+    <type>pom</type>
+</dependency>
 ```
 
 <b>Note</b>
